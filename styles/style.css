@@ -1,0 +1,169 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* common style */
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FFF;
+}
+*{
+    margin: 0;
+}
+hr{
+    fill: linear-gradient( rgba(0, 0, 0, 0.05));
+    margin: 20px 250px;
+}
+
+/* header */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-menu{
+    display: flex;
+    gap: 25px;
+} 
+.header-menu a{
+    color:#3A3A3A;
+    text-decoration: none;
+}
+
+/* influencer intro */
+.influencer-intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 120px;
+}
+.influencer-title{
+    width: 580px;
+    color: #3A3A3A;
+}
+.intro-title{
+    font-size: 52px;
+}
+.intro-description{
+    font-size: 16px;
+    font-weight: 600;
+}
+.intro-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFFFFF;
+    border-radius: 41px;
+    background: #E02C6D;
+    padding: 10px 24px;
+
+}
+.intro-img img{
+    width: 400px;
+    height: 365px;
+    background-image: url('../images/Circle\ design.svg');
+}
+
+/* logo */
+.sponsor-img{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* popular collection */
+.popular-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px 200px;
+}
+.collection{
+    width: 300px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+}
+.collection img{
+    width: 300px;
+    height: 256px;
+}
+.product-rating{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.product-info{
+    margin-top:10px;
+}
+.product-more-btn a{
+    width: 1230px;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: end;
+    color: #E02C6DDE;
+}
+
+/* feature product */
+.feature-product{
+    width: 1440px;
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.feature-img img{
+    width: 404px;
+    height: 270px;
+}
+.feature-title{
+    font-size: 38px;
+}
+.feature-description{
+    font-size: 16px;
+    width: 501px;
+    margin: 20px 0px;
+}
+.feature-btn{
+    background: #E02C6D;
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* footer */
+footer{
+    background: #0A0826;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+.footer-title{
+    font-size: 24px;
+}
+.footer-description{
+    font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+.social-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
