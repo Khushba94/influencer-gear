@@ -20,6 +20,9 @@ nav{
     justify-content: space-around;
     align-items: center;
 }
+.fa-bars{
+    display: none;
+}
 .header-menu{
     display: flex;
     gap: 25px;
@@ -56,6 +59,7 @@ nav{
     border-radius: 41px;
     background: #E02C6D;
     padding: 10px 24px;
+    margin-top: 20px;
 
 }
 .intro-img img{
@@ -104,13 +108,13 @@ nav{
     margin-top:10px;
 }
 .product-more-btn a{
-    width: 1230px;
-    display: flex;
-    gap: 10px;
+    float: right;
     text-decoration: none;
-    align-items: center;
-    justify-content: end;
+    margin-right: 28px;
     color: #E02C6DDE;
+}
+.fa-arrow-right{
+    margin-left: 10px;
 }
 
 /* feature product */
@@ -167,3 +171,97 @@ footer{
     justify-content: center;
 }
 
+/* responsive mobile version */
+@media only screen and (max-width:688px) {
+    .fa-bars{
+        display: inline;
+    }
+    .header-logo{
+        text-align: center;
+    }
+    .header-menu{
+        display: none;
+    }
+    .fa-cart-shopping{
+        display: inline !important;
+    }
+    .influencer-intro{
+        flex-direction: column-reverse;
+    }
+   
+    /* influencer intro */
+    .influencer-intro{
+        flex-direction: column-reverse;
+        padding: 0px;
+    }
+    .influencer-title{
+        width: 404px !important;
+        text-align: center;
+    }
+    .intro-title{
+        font-size: 28px !important;
+    }
+    .intro-description{
+        width: 321px !important;
+        font-size: 14px !important;
+        text-align: center !important;
+    }
+    .intro-img img{
+        width: 202px !important;
+        height: 190px !important;
+    }
+    .intro-btn{
+        text-align: center;
+    }
+    /* logo */
+    .sponsor-img{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 15px;
+        column-gap: 10px;       
+    }
+    /* popular collection */
+    .popular-title{
+        font-size: 16px !important;
+    }
+    .popular-collection{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 20px;
+    }
+    .product-more-btn a{
+        width: 330px;
+        margin-top: 10px;
+    }
+    /* feature product */
+    .feature-product{
+        flex-direction:column-reverse;
+    }
+    .feature-img img{
+        width: 299px;
+        height: 188px;
+    }
+    .feature-title{
+        font-size: 24px;
+        text-align: center;
+    }
+    .feature-description{
+        width: 429px;
+        margin: 20px;
+        text-align: center;
+    }
+    .feature-btn-center{
+        text-align: center !important;
+    }
+
+    /* footer */
+    .footer-title{
+        font-size: 16px;
+    }
+    .footer-description{
+        font-size: 12px;
+    }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+}
